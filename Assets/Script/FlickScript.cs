@@ -71,26 +71,26 @@ public class FlickScript : MonoBehaviour
         if (flickValue_x > 500f)
         {
             Debug.Log("右フリック");
-            anim.Play("Attack");
+            anim.Play("root|slash 02");
         }
 
         if (flickValue_x < -500f)
         {
             Debug.Log("左フリック");
             //anim.SetBool("Attack", true);
-            anim.Play("Attack");
+            anim.Play("root|slash01");
         }
 
         if (flickValue_y > 500f)
         {
             Debug.Log("上フリック");
-            anim.Play("Attack");
+            anim.Play("root|stab");
         }
 
         if (flickValue_y < -500f)
         {
             Debug.Log("下フリック");
-            anim.Play("Attack");
+            anim.Play("root|scream");
         }
     }
 }
